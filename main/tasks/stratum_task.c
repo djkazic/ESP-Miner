@@ -23,7 +23,7 @@ static bool bDNSInvalid = false;
 
 static StratumApiV1Message stratum_api_v1_message = {};
 
-static SystemTaskModule SYSTEM_TASK_MODULE = {.stratum_difficulty = 8192};
+static SystemTaskModule SYSTEM_TASK_MODULE = {.stratum_difficulty = 16384};
 
 void dns_found_cb(const char * name, const ip_addr_t * ipaddr, void * callback_arg)
 {
